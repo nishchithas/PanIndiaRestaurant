@@ -1,0 +1,62 @@
+<header>
+    <div class="container">
+        <div id="logo">
+            <div id="left-box">
+                <div class="kanji">
+                  Feel Taste
+                </div>
+                <div class="kanji">
+                  Indian Inspired
+                </div>
+            </div>
+
+            <div id="middle-box">
+                <a routerLink="/home">
+                    <div id="title">
+                      Pan India Restaurant
+                    </div>
+                </a>
+            </div>
+
+            <div id="right-box">
+                <div class="kanji">
+                  Home cooking
+                </div>
+                <div class="kanji">
+                  Way better
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <!-- Link to menu -->
+                <li>
+                    <a class="nav-link" routerLink="/order/menu">Menu</a>
+                </li>
+
+                <!-- Link to login -->
+                <li *ngIf="!isAuth">
+                    <a class="nav-link" routerLink="/order/login">Login</a>
+                </li>
+
+                <!-- Link to user dashboard -->
+                <li *ngIf="isAuth" class="menu-container">
+                    <a class="nav-link" routerLink="/order/dashboard">{{user.name}}</a>
+                    <div class="menu">
+                        <!-- <a class="nav-link" routerLink="/order/profile">Profile</a>
+                        <a class="nav-link" routerLink="/order/orders">Orders</a> -->
+                        <a (click)="logout()" class="nav-link">Logout</a>
+                    </div>
+                </li>
+
+                <!-- Link to cart -->
+                <li>
+                    <a class="nav-link" routerLink="/order/cart">
+                        Cart <span *ngIf="cartQuantity">{{cartQuantity}}</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

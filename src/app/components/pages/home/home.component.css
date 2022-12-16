@@ -1,0 +1,53 @@
+#title {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 8px;
+}
+
+#homeDesc {
+    padding: 1rem;
+}
+
+#viewMenuBtn {
+    padding: 2rem;
+}
+
+div a {
+    text-decoration: none;
+}
+
+.home-button {
+    background-color: white;
+    border: 3px solid #d01500;
+    border-radius: 12px;
+    cursor: pointer;
+    color: #d01500;
+    font-size: 1.2rem;
+    padding: 0.8rem 1.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.home-button:hover {
+    background-color: #d01500;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.home-button:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+}
+
+
+
+.img-fluid{ min-width:100%}
+
+/* .carousel-control-prev-icon{
+  background-image: url('https://apufpel.com.br/assets/img/seta_prim.png') !important;
+ }
+ .carousel-control-next-icon{
+    background-image: url('https://apufpel.com.br/assets/img/seta_ult.png')!important;
+ } */

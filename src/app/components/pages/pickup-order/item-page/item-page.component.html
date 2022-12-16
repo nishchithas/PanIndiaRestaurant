@@ -1,0 +1,46 @@
+<app-not-found 
+    [visible]="!menu"
+    notFoundMessage="Sorry, we couldn't find this item."
+    resetLinkText="Back to Menu">
+</app-not-found>
+
+<div *ngIf="menu" class="container">
+
+    <div *ngIf="menu.image" class="imgBlock">
+        <img class="imgStyle" src="/assets/images/menu/{{menu.image}}" alt="{{menu.name}}">
+    </div>
+
+    <div class="item-details">
+        <!-- Item Name -->
+        <div class="item-header">
+            <span class="item-name">
+                {{menu.name}}
+            </span>
+        </div>
+
+        <!-- Price -->
+        <div class="item-price">
+            <span>
+                {{menu.price | currency}}
+            </span>
+        </div>
+
+        <!-- Desc -->
+        <div class="item-desc">
+            <h3>
+                {{menu.desc}}
+            </h3>
+        </div>
+
+        <!-- TO DO: Input for Special Instructions -->
+        <!-- <div class="item-instructions">
+            <input>
+        </div> -->
+
+        <div class="button-container">
+            <button class="addButton" (click)="addToCart()">Add to Cart</button>
+            <button routerLink="/order/menu">Back to Menu</button>
+        </div>
+
+    </div>
+</div>

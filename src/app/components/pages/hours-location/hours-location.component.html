@@ -1,0 +1,39 @@
+<!-- Main header -->
+<app-header></app-header>
+
+<!-- Nav Bar -->
+<app-nav-bar></app-nav-bar>
+
+<div class="descBlock">
+    <!-- Hours & Location -->
+    <div style="padding-bottom: 30px;">
+        <h1 style="text-align: center;">
+            HOURS & LOCATION
+        </h1>
+    </div>
+
+    <!-- Phone Number, Phone #, and Hours -->
+    <h3>
+        {{address}} <br>
+        {{city}} <br>
+        {{phoneNum}} <br><br>
+
+        <strong>Monday through Thursday</strong> <br>
+        {{monHours}} <br><br>
+
+        <strong>Friday & Saturday</strong> <br>
+        {{friSatHours}} <br><br>
+
+        <strong>Sunday</strong> <br>
+        {{sunHours}}
+    </h3>
+</div>
+
+<!-- Map Location -->
+<div class="imgBlock" style="padding-top: 30px;">
+    <iframe class="imgStyle" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=7%20waterside%20derby+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<!-- Footer -->
+<app-footer></app-footer>
+

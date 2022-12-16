@@ -1,0 +1,61 @@
+<!-- Main header -->
+<app-header></app-header>
+
+<!-- Nav Bar -->
+<app-nav-bar></app-nav-bar>
+
+<!-- Sushi Image -->
+<!-- <div style="padding-top: 1rem;" class="imgBlock">
+    <img class="imgStyle" src="../assets/images/biryani.jpg" alt="Sushi">
+</div> -->
+<div style="padding-top: 1rem;" class="imgBlock" >
+<ngb-carousel *ngIf="images" [wrap]="true">
+  <ng-template ngbSlide>
+    <img class='imgStyle' src="../assets/images/biryani.jpg" alt="Random first slide">
+    <div class="carousel-caption">
+
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img class='imgStyle' src="../assets/images/bajji.jpg"  alt="Random second slide">
+    <div class="carousel-caption">
+
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img class='imgStyle' src="../assets/images/samosa.jfif" alt="Random third slide">
+    <div class="carousel-caption">
+
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img class='imgStyle' src="../assets/images/chat.jpg" alt="Random fourth slide">
+    <div class="carousel-caption">
+
+    </div>
+  </ng-template>
+</ngb-carousel>
+</div>
+<!-- Text Block + Button -->
+<div class="homeDescBlock">
+    <!-- Welcome -->
+    <h1 id="title">{{title}}</h1>
+
+    <!-- Description -->
+    <div id="homeDesc">
+        <h3>{{desc}}</h3>
+    </div>
+
+    <!-- Button -->
+    <div id="viewMenuBtn">
+        <a class="home-button" routerLink="/menu">VIEW MENU</a>
+    </div>
+</div>
+
+<!-- Teppanyaki Image -->
+<div class="imgBlock">
+    <img class="imgStyle" src="../assets/images/dosa.jpg" alt="Teppanyaki">
+</div>
+
+<!-- Footer -->
+<app-footer></app-footer>

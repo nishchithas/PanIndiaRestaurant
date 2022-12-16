@@ -1,0 +1,66 @@
+<!-- Main header -->
+<app-header></app-header>
+
+<!-- Nav Bar -->
+<app-nav-bar></app-nav-bar>
+
+<div class="descBlock">
+    <!-- Title -->
+    <div style="padding-bottom: 30px;">
+        <h1 style="text-align: center;">
+            MENU
+        </h1>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navigation">
+        <nav>
+            <a routerLink="/menu/appetizers">
+                <h3>
+                    APPETIZERS
+                </h3>
+            </a>
+        </nav>
+
+        <span class="tab"></span>
+
+        <nav>
+            <a routerLink="/menu/sushi">
+                <h3>
+                    DINNER
+                </h3>
+            </a>
+        </nav>
+
+        <span class="tab"></span>
+
+        <nav>
+            <a routerLink="/menu/dessert">
+                <h3>
+                    DESSERT
+                </h3>
+            </a>
+        </nav>
+
+        <span class="tab"></span>
+
+        <nav>
+            <a routerLink="/menu/beverages">
+                <h3>
+                    BEVERAGES
+                </h3>
+            </a>
+        </nav>
+    </div>
+
+    <!-- Display selected menu -->
+    <router-outlet></router-outlet>
+</div>
+
+<!-- Menu Image -->
+<div class="imgBlock">
+    <img class="imgStyle" src="../assets/images/biryani.jpg" alt="Sushi">
+</div>
+
+<!-- Footer -->
+<app-footer></app-footer>
